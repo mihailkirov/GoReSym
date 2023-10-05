@@ -1,5 +1,7 @@
 module github.com/mihailkirov/GoReSym
 
+replace github.com/mandiant/GoReSym => ./
+
 go 1.21
 
 require (
