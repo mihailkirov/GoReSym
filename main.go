@@ -410,6 +410,18 @@ func TextToJson(key string, text string) string {
 	return fmt.Sprintf("{\"%s\": \"%s\"}", key, text)
 }
 
+// ExtractSymbols extract the metadata from the binary.
+// Practically, it does the same as the entry point main
+// but can be called from other Go code
+func ExtractSymbols(printStdPkgs, printFilePaths, printTypes bool,
+	typeAddress int, versionOverride string) (*ExtractMetadata, error) {
+	metadata, err := main_impl(flag.Arg(0), printStdPkgs, printFilePaths, printTypes, typeAddress, versionOverride)
+	if err != nil {
+		return nil, err
+	}
+	return &metadata, nil
+}
+
 func main() {
 	stdout := bufio.NewWriter(os.Stdout)
 	defer stdout.Flush()
