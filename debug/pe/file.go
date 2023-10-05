@@ -16,7 +16,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/mandiant/GoReSym/debug/dwarf"
+	"github.com/mkirov/GoReSym/debug/dwarf"
 )
 
 // Avoid use of post-Go 1.4 io features, to make safe for toolchain bootstrap.

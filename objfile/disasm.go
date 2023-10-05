@@ -20,8 +20,8 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	"github.com/mandiant/GoReSym/cmd/src"
-	"github.com/mandiant/GoReSym/debug/gosym"
+	"github.com/mkirov/GoReSym/cmd/src"
+	"github.com/mkirov/GoReSym/debug/gosym"
 
 	"golang.org/x/arch/arm/armasm"
 	"golang.org/x/arch/arm64/arm64asm"

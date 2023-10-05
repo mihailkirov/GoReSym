@@ -29,8 +29,8 @@ import (
 	"io"
 	"unsafe"
 
-	"github.com/mandiant/GoReSym/bio"
-	"github.com/mandiant/GoReSym/unsafeheader"
+	"github.com/mkirov/GoReSym/bio"
+	"github.com/mkirov/GoReSym/unsafeheader"
 )
 
 // New object file format.

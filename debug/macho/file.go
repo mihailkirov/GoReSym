@@ -18,7 +18,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/mandiant/GoReSym/debug/dwarf"
+	"github.com/mkirov/GoReSym/debug/dwarf"
 )
 
 // A File represents an open Mach-O file.

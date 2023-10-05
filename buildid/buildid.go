@@ -14,9 +14,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/mandiant/GoReSym/debug/elf"
-	"github.com/mandiant/GoReSym/io/fs"
-	"github.com/mandiant/GoReSym/xcoff"
+	"github.com/mkirov/GoReSym/debug/elf"
+	"github.com/mkirov/GoReSym/io/fs"
+	"github.com/mkirov/GoReSym/xcoff"
 )
 
 var (

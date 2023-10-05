@@ -12,7 +12,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/mandiant/GoReSym/debug/dwarf"
+	"github.com/mkirov/GoReSym/debug/dwarf"
 )
 
 // SectionHeader holds information about an XCOFF section header.

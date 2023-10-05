@@ -12,7 +12,7 @@ package fs
 import (
 	"time"
 
-	"github.com/mandiant/GoReSym/oserror"
+	"github.com/mkirov/GoReSym/oserror"
 )
 
 // An FS provides access to a hierarchical file system.

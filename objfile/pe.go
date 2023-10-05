@@ -15,8 +15,8 @@ import (
 	"io"
 	"sort"
 
-	"github.com/mandiant/GoReSym/debug/dwarf"
-	"github.com/mandiant/GoReSym/debug/pe"
+	"github.com/mkirov/GoReSym/debug/dwarf"
+	"github.com/mkirov/GoReSym/debug/pe"
 )
 
 type peFile struct {

@@ -14,12 +14,12 @@ import (
 	"io"
 	"os"
 
-	"github.com/mandiant/GoReSym/archive"
-	"github.com/mandiant/GoReSym/debug/dwarf"
-	"github.com/mandiant/GoReSym/debug/gosym"
-	"github.com/mandiant/GoReSym/goobj"
-	"github.com/mandiant/GoReSym/objabi"
-	"github.com/mandiant/GoReSym/sys"
+	"github.com/mkirov/GoReSym/archive"
+	"github.com/mkirov/GoReSym/debug/dwarf"
+	"github.com/mkirov/GoReSym/debug/gosym"
+	"github.com/mkirov/GoReSym/goobj"
+	"github.com/mkirov/GoReSym/objabi"
+	"github.com/mkirov/GoReSym/sys"
 )
 
 type goobjFile struct {

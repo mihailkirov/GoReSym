@@ -17,8 +17,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/mandiant/GoReSym/debug/dwarf"
-	"github.com/mandiant/GoReSym/saferio"
+	"github.com/mkirov/GoReSym/debug/dwarf"
+	"github.com/mkirov/GoReSym/saferio"
 )
 
 // seekStart, seekCurrent, seekEnd are copies of

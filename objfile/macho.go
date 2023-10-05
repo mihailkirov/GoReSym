@@ -15,8 +15,8 @@ import (
 	"io"
 	"sort"
 
-	"github.com/mandiant/GoReSym/debug/dwarf"
-	"github.com/mandiant/GoReSym/debug/macho"
+	"github.com/mkirov/GoReSym/debug/dwarf"
+	"github.com/mkirov/GoReSym/debug/macho"
 )
 
 const stabTypeMask = 0xe0

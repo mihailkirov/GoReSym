@@ -10,7 +10,7 @@ import (
 	"bytes"
 	"encoding/binary"
 
-	"github.com/mandiant/GoReSym/objabi"
+	"github.com/mkirov/GoReSym/objabi"
 )
 
 // CUFileIndex is used to index the filenames that are stored in the
