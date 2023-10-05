@@ -25,8 +25,8 @@ import (
 	"io/fs"
 	"os"
 
-	"github.com/mkirov/GoReSym/runtime/debug"
-	"github.com/mkirov/GoReSym/xcoff"
+	"github.com/mihailkirov/GoReSym/runtime/debug"
+	"github.com/mihailkirov/GoReSym/xcoff"
 )
 
 // Type alias for build info. We cannot move the types here, since

@@ -19,8 +19,8 @@ import (
 	"unsafe"
 
 	"github.com/elliotchance/orderedmap"
-	"github.com/mkirov/GoReSym/debug/dwarf"
-	"github.com/mkirov/GoReSym/debug/gosym"
+	"github.com/mihailkirov/GoReSym/debug/dwarf"
+	"github.com/mihailkirov/GoReSym/debug/gosym"
 )
 
 type StompMagicCandidate struct {
@@ -234,7 +234,7 @@ func (e *Entry) PCLineTable(versionOverride string, knownPclntabVA uint64, known
 	var finalCandidates []PclntabCandidate
 	var atLeastOneGood bool = false
 	for _, candidate := range candidates {
-		/* See https://github.com/mkirov/GoReSym/pull/11
+		/* See https://github.com/mihailkirov/GoReSym/pull/11
 		Locating the .text base is not safe by name due to packers which mangle names. We also have to consider CGO
 		which appears to update the base with an 'adjusted' one to add some shim code. So, PCLineTable
 		get called first with the candidate.SecStart just to find symbols, just so we can find the moduledata.

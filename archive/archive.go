@@ -21,8 +21,8 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/mkirov/GoReSym/bio"
-	"github.com/mkirov/GoReSym/goobj"
+	"github.com/mihailkirov/GoReSym/bio"
+	"github.com/mihailkirov/GoReSym/goobj"
 )
 
 /*

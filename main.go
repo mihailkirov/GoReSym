@@ -11,12 +11,12 @@ import (
 	"os"
 	"strings"
 
-	// we copy the go src directly, then change every include to github.com/mkirov/GoReSym/<whatever>
+	// we copy the go src directly, then change every include to github.com/mihailkirov/GoReSym/<whatever>
 	// this is required since we're using internal files. Our modifications are directly inside the copied source
-	"github.com/mkirov/GoReSym/buildid"
-	"github.com/mkirov/GoReSym/buildinfo"
-	"github.com/mkirov/GoReSym/objfile"
-	"github.com/mkirov/GoReSym/runtime/debug"
+	"github.com/mihailkirov/GoReSym/buildid"
+	"github.com/mihailkirov/GoReSym/buildinfo"
+	"github.com/mihailkirov/GoReSym/objfile"
+	"github.com/mihailkirov/GoReSym/runtime/debug"
 )
 
 func isStdPackage(pkg string) bool {

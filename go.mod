@@ -1,4 +1,4 @@
-module github.com/mkirov/GoReSym
+module github.com/mihailkirov/GoReSym
 
 go 1.21
 

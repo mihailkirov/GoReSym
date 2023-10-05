@@ -15,7 +15,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/mkirov/GoReSym/io/fs"
+	"github.com/mihailkirov/GoReSym/io/fs"
 )
 
 func readAligned4(r io.Reader, sz int32) ([]byte, error) {

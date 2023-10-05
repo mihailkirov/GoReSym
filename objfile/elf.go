@@ -14,8 +14,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/mkirov/GoReSym/debug/dwarf"
-	"github.com/mkirov/GoReSym/debug/elf"
+	"github.com/mihailkirov/GoReSym/debug/dwarf"
+	"github.com/mihailkirov/GoReSym/debug/elf"
 )
 
 type elfFile struct {
