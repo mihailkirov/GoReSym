@@ -4,10 +4,11 @@ package main
 import (
 	"errors"
 	"fmt"
+	_ "net/http/pprof"
 	"os"
 	"testing"
 
-	_ "net/http/pprof"
+	"github.com/mihailkirov/GoReSym/extractor"
 )
 
 var versions = []string{"117", "116", "115", "114", "113", "112", "111", "110", "19", "18", "17", "16", "15"}
@@ -29,7 +30,8 @@ func TestAllVersions(t *testing.T) {
 			}
 
 			t.Run(versionPath, func(t *testing.T) {
-				data, err := main_impl(filePath, true, true, true, 0, "")
+				d, err := extractor.ExtractSymbols(filePath, true, true, true, 0, "")
+				data := *d
 				if err != nil {
 					t.Errorf("Go %s failed on %s: %s", v, file, err)
 				}
@@ -88,7 +90,8 @@ func testSymbolRecovery(t *testing.T, workingDirectory string, binaryName string
 		return
 	}
 
-	data, err := main_impl(filePath, true, true, true, 0, "")
+	d, err := extractor.ExtractSymbols(filePath, true, true, true, 0, "")
+	data := *d
 	if err != nil {
 		t.Errorf("GoReSym failed: %s", err)
 	}
@@ -183,7 +186,7 @@ func TestWeirdBins(t *testing.T) {
 			return
 		}
 
-		_, err := main_impl(filePath, true, true, true, 0, "")
+		_, err := extractor.ExtractSymbols(filePath, true, true, true, 0, "")
 		if err == nil {
 			t.Errorf("GoReSym found pclntab in a non-go binary, this is not possible.")
 		}
@@ -197,7 +200,7 @@ func TestWeirdBins(t *testing.T) {
 			return
 		}
 
-		_, err := main_impl(filePath, true, true, true, 0, "")
+		_, err := extractor.ExtractSymbols(filePath, true, true, true, 0, "")
 		if err == nil {
 			t.Errorf("GoReSym found pclntab in a non-go binary, this is not possible.")
 		}
